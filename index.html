@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="تحديثات سيرفر GGS">
+<meta property="og:description" content="شكل جديد. نفس الشباب. كل تحديثات سيرفر GGS في مكان واحد.">
+<title>تحديثات سيرفر GGS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+--bg:#ffffff; --band:#f5f5f7; --tile:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+--ink:#000000; --ink-fg:#f5f5f7; --ink-muted:#86868b; --link:#0066cc;
+--font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Arabic","IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
+color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+--bg:#000000; --band:#0f0f11; --tile:#161618; --fg:#f5f5f7; --muted:#a1a1a6; --line:#2c2c2e;
+--ink:#161618; --ink-fg:#f5f5f7; --ink-muted:#a1a1a6; --link:#2997ff; color-scheme:dark}}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:17px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased}
+.in{max-width:980px;margin:0 auto;padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px))}
+nav{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}
+nav .in{display:flex;align-items:center;justify-content:space-between;height:48px;font-size:.8rem;color:var(--muted)}
+nav b{color:var(--fg);font-weight:600;letter-spacing:.02em}
+html{scroll-behavior:smooth}
+.hero{text-align:center;padding-block:72px 64px;position:relative;overflow:hidden}
+.hero .in{position:relative}
+.hero img{width:132px;height:132px;border-radius:30px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.eyebrow{font-size:1.05rem;font-weight:600;color:var(--muted);margin:28px 0 6px}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;line-height:1.06;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.lede{font-size:clamp(1.15rem,2.4vw,1.5rem);color:var(--muted);max-width:30ch;margin:18px auto 0;line-height:1.4;text-wrap:balance}
+.cta{display:flex;justify-content:center;gap:28px;margin-top:26px;font-size:1.05rem;flex-wrap:wrap}
+.cta a{color:var(--link);text-decoration:none}
+.cta a:hover{text-decoration:underline}
+.cta a::after{content:" ‹"}
+.band{background:var(--band);padding-block:80px}
+h2{font-size:clamp(2rem,4.6vw,3rem);font-weight:700;line-height:1.1;margin:0 0 12px;text-align:center;text-wrap:balance}
+.sub{color:var(--muted);text-align:center;font-size:1.15rem;margin:0 auto 44px;max-width:40ch;text-wrap:balance}
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.t{background:var(--tile);border-radius:22px;padding:30px 28px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.t.w3{grid-column:span 3}.t.w2{grid-column:span 2}
+@media (max-width:760px){.t.w3,.t.w2{grid-column:span 6}}
+.t .k{font-size:.8rem;font-weight:600;color:var(--muted);letter-spacing:.02em}
+.t h3{font-size:1.45rem;font-weight:700;line-height:1.2;margin:0;text-wrap:balance}
+.t p{margin:0;color:var(--muted);font-size:1rem}
+.chan{font-weight:600;color:var(--fg)}
+.dark{background:var(--ink);color:var(--ink-fg);padding-block:88px}
+.dark .sub{color:var(--ink-muted)}
+.games{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:8px}
+@media (max-width:640px){.games{grid-template-columns:minmax(0,1fr)}}
+.g{border-radius:20px;padding:26px 24px;color:#fff;min-width:0}
+.g.v{background:linear-gradient(160deg,#ff5f6d,#c81e36)}
+.g.c{background:linear-gradient(160deg,#5aa866,#2c6a37)}
+.g.o{background:linear-gradient(160deg,#7b86ff,#3f4bd8)}
+.g .e{font-size:1.8rem}
+.g b{display:block;font-size:1.3rem;margin-top:6px}
+.g span{font-size:.92rem;opacity:.85}
+.how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:56px;text-align:center}
+@media (max-width:640px){.how{grid-template-columns:minmax(0,1fr)}}
+.how .n{font-size:2.4rem;font-weight:700;color:var(--ink-fg)}
+.how p{margin:4px 0 0;color:var(--ink-muted)}
+.map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:760px){.map{grid-template-columns:minmax(0,1fr)}}
+.cat{background:var(--tile);border-radius:18px;padding:22px 22px 16px;min-width:0}
+.cat h4{margin:0 0 10px;font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:.02em}
+.row{display:flex;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:.98rem;min-width:0}
+.row:first-of-type{border-top:0}
+.row i{font-style:normal;color:var(--muted);width:1.2em;text-align:center;flex:none}
+.row span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row em{margin-inline-start:auto;font-style:normal;font-size:.72rem;font-weight:600;color:var(--link);flex:none}
+.lb-pod{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:end}
+@media (max-width:760px){.lb-pod{grid-template-columns:minmax(0,1fr)}}
+.p{background:var(--band);border-radius:24px;padding:28px 24px;text-align:center;min-width:0;display:flex;flex-direction:column;gap:6px;align-items:center}
+.p.first{padding-block:44px}
+@media (min-width:761px){.lb-pod{direction:ltr}.lb-pod .p{direction:rtl}}
+.medal{font-size:2.4rem;line-height:1}
+.p .u{font-size:1.35rem;font-weight:700;direction:ltr;unicode-bidi:isolate;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.p .num{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:700;line-height:1;font-variant-numeric:tabular-nums;margin-top:6px}
+.p .lbl{font-size:.82rem;color:var(--muted)}
+.p .joke{font-size:1rem;color:var(--fg);margin-top:10px;text-wrap:balance}
+.lvl{display:inline-block;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--bg);color:var(--muted);margin-top:4px}
+.lb-list{margin-top:18px;background:var(--band);border-radius:22px;padding:6px 24px}
+.r{display:grid;grid-template-columns:2.2em minmax(0,9em) minmax(0,1fr) auto;gap:16px;align-items:center;padding:16px 0;border-top:1px solid var(--line)}
+.r:first-child{border-top:0}
+@media (max-width:640px){.r{grid-template-columns:2em minmax(0,1fr) auto}.r .jk{grid-column:2 / -1}}
+.r .rk{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.r .nm{font-weight:600;direction:ltr;unicode-bidi:isolate;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.r .jk{color:var(--muted);font-size:.98rem;min-width:0}
+.r .ct{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.r .ct small{color:var(--muted);font-weight:400}
+.src{color:var(--muted);font-size:.8rem;text-align:center;margin-top:18px}
+footer{padding-block:28px 40px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line)}
+footer .in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (prefers-reduced-motion:no-preference){
+.hero::before{content:"";position:absolute;inset:-30% -10% auto;height:120%;background:radial-gradient(40% 50% at 50% 40%,color-mix(in srgb,var(--fg) 9%,transparent),transparent 70%);animation:glow 8s ease-in-out infinite alternate;pointer-events:none}
+.hero img{animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both}
+.hero .eyebrow{animation:up .9s .25s cubic-bezier(.2,.8,.2,1) both}
+.hero h1{animation:up 1s .4s cubic-bezier(.2,.8,.2,1) both}
+.hero .lede{animation:up 1s .6s cubic-bezier(.2,.8,.2,1) both}
+.hero .cta{animation:up 1s .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(40px) scale(.85);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes glow{from{transform:translateY(0) scale(1)}to{transform:translateY(6%) scale(1.15)}}
+.t,.g,.cat{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.t:hover,.cat:hover{transform:translateY(-4px) scale(1.01);box-shadow:0 18px 40px rgba(0,0,0,.12)}
+.g:hover{transform:translateY(-6px) rotate(-1deg) scale(1.03)}
+.g .e{display:inline-block;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.g:hover .e{transform:scale(1.3) rotate(-10deg)}
+@supports (animation-timeline: view()){
+.t,.g,.cat,.how>div{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+h2,.sub{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% cover 25%}
+@keyframes reveal{from{opacity:.15;transform:translateY(60px) scale(.94)}to{opacity:1;transform:none}}
+}
+}
+</style>
+<link rel="icon" href="logo.png">
+</head>
+<body>
+<nav><div class="in"><b>GGS</b><span>تحديث 16 أكتوبر 2026</span></div></nav>
+<section class="hero"><div class="in">
+<img src="logo.png" alt="شعار GGS">
+<p class="eyebrow">سيرفر GGS</p>
+<h1>شكل جديد.<br>نفس الشباب.</h1>
+<p class="lede">رتبنا السيرفر من أوله لآخره عشان تلقى كل شي أسرع، وتلقى ربعك في لعبتك.</p>
+<div class="cta"><a href="#roles">اختار رتبة لعبتك</a><a href="#top">شوف مين ما عنده حياة</a><a href="#map">شوف شكل السيرفر</a></div>
+</div></section>
+<section class="band"><div class="in">
+<h2>وش الجديد.</h2>
+<p class="sub">كل التغييرات اللي صارت اليوم، في مكان واحد.</p>
+<div class="bento">
+<div class="t w3"><span class="k">الهوية</span><h3>شعار جديد للسيرفر</h3><p>GGS بالأبيض والأسود، وفي داخل الحروف رسمات ترمز لألعابنا.</p></div>
+<div class="t w3"><span class="k">الترتيب</span><h3>كاتيقوري Info صار أول شي</h3><p>الترحيب والقوانين والإعلانات والرتب والأذكار، كلها فوق.</p></div>
+<div class="t w2"><span class="k">جديد</span><h3>روم الإعلانات</h3><p><span class="chan">〈announcements-📢〉</span> للأخبار بس، عشان ما يضيع شي.</p></div>
+<div class="t w2"><span class="k">جديد</span><h3>روم الرتب</h3><p><span class="chan">〈roles-🎭〉</span> تاخذ فيه رتبة لعبتك بضغطة.</p></div>
+<div class="t w2"><span class="k">تعديل</span><h3>ترحيب جديد</h3><p>كل عضو يدخل يجيه كرت باسمه ورقمه في <span class="chan">〈welcome-🤗〉</span>.</p></div>
+<div class="t w3"><span class="k">الصوت</span><h3>أسماء أوضح للرومات</h3><p>صارت <span class="chan">〈Voice 1-🎧〉</span> و <span class="chan">〈Voice 2-🎧〉</span> بدل الاسمين المكررين.</p></div>
+<div class="t w3"><span class="k">الحماية</span><h3>سجل يحفظ الجو</h3><p>رومات الإدارة نزلت تحت، وصار فيه سجل يتابع اللي يصير في السيرفر.</p></div>
+</div>
+</div></section>
+<section class="dark" id="roles"><div class="in">
+<h2>لعبتك. رتبتك.</h2>
+<p class="sub">اختار لعبتك من روم الرتب، والشباب يقدرون ينادونك بمنشن وحدة.</p>
+<div class="games">
+<div class="g v"><div class="e">🔫</div><b>Valorant</b><span>@Valorant</span></div>
+<div class="g c"><div class="e">🪖</div><b>Call of Duty</b><span>@Call of Duty</span></div>
+<div class="g o"><div class="e">🛡️</div><b>Overwatch</b><span>@Overwatch</span></div>
+</div>
+<div class="how">
+<div><div class="n">١</div><p>افتح روم 〈roles-🎭〉</p></div>
+<div><div class="n">٢</div><p>اضغط زر لعبتك وتاخذ الرتبة</p></div>
+<div><div class="n">٣</div><p>اضغطه مرة ثانية إذا تبي تشيلها</p></div>
+</div>
+</div></section>
+<section id="top"><div class="in" style="padding-block:88px">
+<h2>ما عندهم حياة.</h2>
+<p class="sub">أكثر الشباب كلام في السيرفر. نحبكم، بس اطلعوا شوي 🌞</p>
+<div class="lb-pod">
+<div class="p second"><div class="medal">🥈</div><div class="u">nokorie</div><span class="lvl">Level 15</span><div class="num">638</div><div class="lbl">رسالة</div><div class="joke">ناقصه 22 رسالة ويطيّح صاحب السيرفر. الحرب الباردة بدأت 🔥</div></div>
+<div class="p first"><div class="medal">🥇</div><div class="u">v7h4</div><span class="lvl">Level 15</span><div class="num">660</div><div class="lbl">رسالة</div><div class="joke">صاحب السيرفر وأول واحد فيه. يعني يسولف مع نفسه أغلب الوقت 😂</div></div>
+<div class="p third"><div class="medal">🥉</div><div class="u">s3dx</div><span class="lvl">Level 13</span><div class="num">487</div><div class="lbl">رسالة</div><div class="joke">أول واحد ضغط زر الرتب. ما ينتظر شي يصير، هو اللي يصير 🏃</div></div>
+</div>
+<div class="lb-list">
+<div class="r"><span class="rk">4</span><span class="nm">the9lord</span><span class="jk">ملك الفوروورد. يرسل كليبات أكثر ما يلعب 📹</span><span class="ct">376 <small>رسالة</small></span></div>
+<div class="r"><span class="rk">5</span><span class="nm">icrazyix</span><span class="jk">اسمه فيه crazy، والمستوى 11 يأكد الكلام</span><span class="ct">305 <small>رسالة</small></span></div>
+<div class="r"><span class="rk">6</span><span class="nm">soazizx</span><span class="jk">يطلع ويختفي مثل الواي فاي في الطيارة ✈️</span><span class="ct">207 <small>رسالة</small></span></div>
+<div class="r"><span class="rk">7</span><span class="nm">jic_bb</span><span class="jk">يقرأ كل شي ويرد مرة بالأسبوع. بس لما يرد يقفلها</span><span class="ct">162 <small>رسالة</small></span></div>
+<div class="r"><span class="rk">8</span><span class="nm">sr0.oi</span><span class="jk">الحساب الأصلي…</span><span class="ct">131 <small>رسالة</small></span></div>
+<div class="r"><span class="rk">9</span><span class="nm">sr0.oiii</span><span class="jk">…والحساب الثالث. واضح إن حساب واحد ما كفّاه 😂</span><span class="ct">108 <small>رسالة</small></span></div>
+<div class="r"><span class="rk">10</span><span class="nm">0bfss</span><span class="jk">دخل التوب 10 بالدفّ، بس دخل 👏</span><span class="ct">67 <small>رسالة</small></span></div>
+</div>
+<p class="src">الأرقام من لوحة MEE6 للسيرفر · 16 أكتوبر 2026</p>
+</div></section>
+<section class="band" id="map"><div class="in">
+<h2>السيرفر الحين.</h2>
+<p class="sub">الترتيب الجديد للرومات من فوق لتحت.</p>
+<div class="map">
+<div class="cat"><h4>〈Info-📌〉</h4>
+<div class="row"><i>#</i><span>〈welcome-🤗〉</span></div>
+<div class="row"><i>#</i><span>rules</span></div>
+<div class="row"><i>#</i><span>〈announcements-📢〉</span><em>جديد</em></div>
+<div class="row"><i>#</i><span>〈roles-🎭〉</span><em>جديد</em></div>
+<div class="row"><i>#</i><span>〈أذكار-الصباح-المساء〉</span></div>
+</div>
+<div class="cat"><h4>〈Public chat-💬〉</h4>
+<div class="row"><i>#</i><span>〈chat-💬〉</span></div>
+<div class="row"><i>#</i><span>〈bots-🤖〉</span></div>
+<div class="row"><i>#</i><span>〈clips-📹〉</span></div>
+<h4 style="margin-top:18px">〈Public Voice-🎧〉</h4>
+<div class="row"><i>🔊</i><span>〈Voice 1-🎧〉</span><em>تعديل</em></div>
+<div class="row"><i>🔊</i><span>〈Voice 2-🎧〉</span><em>تعديل</em></div>
+</div>
+<div class="cat"><h4>〈Private-💎VIP〉</h4>
+<div class="row"><i>#</i><span>〈💬-سواليف〉</span></div>
+<div class="row"><i>🔊</i><span>سيرفر الي فوق</span></div>
+<div class="row"><i>🔊</i><span>سيرفر الي تحت</span></div>
+<h4 style="margin-top:18px">〈AFK-💤〉 · LOG</h4>
+<div class="row"><i>🔊</i><span>〈AFK〉</span></div>
+<div class="row"><i>#</i><span>رومات الإدارة</span></div>
+</div>
+</div>
+</div></section>
+<footer><div class="in"><span>GGS · 2026</span><span>عندك اقتراح؟ اكتبه في 〈chat-💬〉</span></div></footer>
+</body>
+</html>
