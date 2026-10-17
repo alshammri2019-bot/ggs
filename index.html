@@ -2,212 +2,186 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta property="og:title" content="تحديثات سيرفر GGS">
-<meta property="og:description" content="شكل جديد. نفس الشباب. كل تحديثات سيرفر GGS في مكان واحد.">
-<title>تحديثات سيرفر GGS</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap">
-<style>
-:root{
---bg:#ffffff; --band:#f5f5f7; --tile:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
---ink:#000000; --ink-fg:#f5f5f7; --ink-muted:#86868b; --link:#0066cc;
---font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Arabic","IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
-color-scheme:light;
-}
-@media (prefers-color-scheme: dark){:root{
---bg:#000000; --band:#0f0f11; --tile:#161618; --fg:#f5f5f7; --muted:#a1a1a6; --line:#2c2c2e;
---ink:#161618; --ink-fg:#f5f5f7; --ink-muted:#a1a1a6; --link:#2997ff; color-scheme:dark}}
-*{box-sizing:border-box}
-body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:17px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased}
-.in{max-width:980px;margin:0 auto;padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px))}
-nav{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}
-nav .in{display:flex;align-items:center;justify-content:space-between;height:48px;font-size:.8rem;color:var(--muted)}
-nav b{color:var(--fg);font-weight:600;letter-spacing:.02em}
-html{scroll-behavior:smooth}
-.hero{text-align:center;padding-block:72px 64px;position:relative;overflow:hidden}
-.hero .in{position:relative}
-.hero img{width:132px;height:132px;border-radius:30px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
-.eyebrow{font-size:1.05rem;font-weight:600;color:var(--muted);margin:28px 0 6px}
-h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;line-height:1.06;letter-spacing:-.01em;margin:0;text-wrap:balance}
-.lede{font-size:clamp(1.15rem,2.4vw,1.5rem);color:var(--muted);max-width:30ch;margin:18px auto 0;line-height:1.4;text-wrap:balance}
-.cta{display:flex;justify-content:center;gap:28px;margin-top:26px;font-size:1.05rem;flex-wrap:wrap}
-.cta a{color:var(--link);text-decoration:none}
-.cta a:hover{text-decoration:underline}
-.cta a::after{content:" ‹"}
-.band{background:var(--band);padding-block:80px}
-h2{font-size:clamp(2rem,4.6vw,3rem);font-weight:700;line-height:1.1;margin:0 0 12px;text-align:center;text-wrap:balance}
-.sub{color:var(--muted);text-align:center;font-size:1.15rem;margin:0 auto 44px;max-width:40ch;text-wrap:balance}
-.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
-.t{background:var(--tile);border-radius:22px;padding:30px 28px;min-width:0;display:flex;flex-direction:column;gap:8px}
-.t.w3{grid-column:span 3}.t.w2{grid-column:span 2}
-@media (max-width:760px){.t.w3,.t.w2{grid-column:span 6}}
-.t .k{font-size:.8rem;font-weight:600;color:var(--muted);letter-spacing:.02em}
-.t h3{font-size:1.45rem;font-weight:700;line-height:1.2;margin:0;text-wrap:balance}
-.t p{margin:0;color:var(--muted);font-size:1rem}
-.chan{font-weight:600;color:var(--fg)}
-.dark{background:var(--ink);color:var(--ink-fg);padding-block:88px}
-.dark .sub{color:var(--ink-muted)}
-.games{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:8px}
-@media (max-width:640px){.games{grid-template-columns:minmax(0,1fr)}}
-.g{border-radius:20px;padding:26px 24px;color:#fff;min-width:0}
-.g.v{background:linear-gradient(160deg,#ff5f6d,#c81e36)}
-.g.c{background:linear-gradient(160deg,#5aa866,#2c6a37)}
-.g.o{background:linear-gradient(160deg,#7b86ff,#3f4bd8)}
-.g .e{font-size:1.8rem}
-.g b{display:block;font-size:1.3rem;margin-top:6px}
-.g span{font-size:.92rem;opacity:.85}
-.how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:56px;text-align:center}
-@media (max-width:640px){.how{grid-template-columns:minmax(0,1fr)}}
-.how .n{font-size:2.4rem;font-weight:700;color:var(--ink-fg)}
-.how p{margin:4px 0 0;color:var(--ink-muted)}
-.map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-@media (max-width:760px){.map{grid-template-columns:minmax(0,1fr)}}
-.cat{background:var(--tile);border-radius:18px;padding:22px 22px 16px;min-width:0}
-.cat h4{margin:0 0 10px;font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:.02em}
-.row{display:flex;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:.98rem;min-width:0}
-.row:first-of-type{border-top:0}
-.row i{font-style:normal;color:var(--muted);width:1.2em;text-align:center;flex:none}
-.row span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.row em{margin-inline-start:auto;font-style:normal;font-size:.72rem;font-weight:600;color:var(--link);flex:none}
-.lb-pod{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:end}
-@media (max-width:760px){.lb-pod{grid-template-columns:minmax(0,1fr)}}
-.p{background:var(--band);border-radius:24px;padding:28px 24px;text-align:center;min-width:0;display:flex;flex-direction:column;gap:6px;align-items:center}
-.p.first{padding-block:44px}
-@media (min-width:761px){.lb-pod{direction:ltr}.lb-pod .p{direction:rtl}}
-.medal{font-size:2.4rem;line-height:1}
-.p .u{font-size:1.35rem;font-weight:700;direction:ltr;unicode-bidi:isolate;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-.p .num{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:700;line-height:1;font-variant-numeric:tabular-nums;margin-top:6px}
-.p .lbl{font-size:.82rem;color:var(--muted)}
-.p .joke{font-size:1rem;color:var(--fg);margin-top:10px;text-wrap:balance}
-.lvl{display:inline-block;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--bg);color:var(--muted);margin-top:4px}
-.lb-list{margin-top:18px;background:var(--band);border-radius:22px;padding:6px 24px}
-.r{display:grid;grid-template-columns:2.2em minmax(0,9em) minmax(0,1fr) auto;gap:16px;align-items:center;padding:16px 0;border-top:1px solid var(--line)}
-.r:first-child{border-top:0}
-@media (max-width:640px){.r{grid-template-columns:2em minmax(0,1fr) auto}.r .jk{grid-column:2 / -1}}
-.r .rk{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
-.r .nm{font-weight:600;direction:ltr;unicode-bidi:isolate;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.r .jk{color:var(--muted);font-size:.98rem;min-width:0}
-.r .ct{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
-.r .ct small{color:var(--muted);font-weight:400}
-.src{color:var(--muted);font-size:.8rem;text-align:center;margin-top:18px}
-footer{padding-block:28px 40px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line)}
-footer .in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-@media (prefers-reduced-motion:no-preference){
-.hero::before{content:"";position:absolute;inset:-30% -10% auto;height:120%;background:radial-gradient(40% 50% at 50% 40%,color-mix(in srgb,var(--fg) 9%,transparent),transparent 70%);animation:glow 8s ease-in-out infinite alternate;pointer-events:none}
-.hero img{animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both}
-.hero .eyebrow{animation:up .9s .25s cubic-bezier(.2,.8,.2,1) both}
-.hero h1{animation:up 1s .4s cubic-bezier(.2,.8,.2,1) both}
-.hero .lede{animation:up 1s .6s cubic-bezier(.2,.8,.2,1) both}
-.hero .cta{animation:up 1s .8s cubic-bezier(.2,.8,.2,1) both}
-@keyframes rise{from{opacity:0;transform:translateY(40px) scale(.85);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
-@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-@keyframes glow{from{transform:translateY(0) scale(1)}to{transform:translateY(6%) scale(1.15)}}
-.t,.g,.cat{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
-.t:hover,.cat:hover{transform:translateY(-4px) scale(1.01);box-shadow:0 18px 40px rgba(0,0,0,.12)}
-.g:hover{transform:translateY(-6px) rotate(-1deg) scale(1.03)}
-.g .e{display:inline-block;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
-.g:hover .e{transform:scale(1.3) rotate(-10deg)}
-@supports (animation-timeline: view()){
-.t,.g,.cat,.how>div{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
-h2,.sub{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% cover 25%}
-@keyframes reveal{from{opacity:.15;transform:translateY(60px) scale(.94)}to{opacity:1;transform:none}}
-}
-}
-.thanks{background:var(--ink);color:var(--ink-fg);padding-block:88px;text-align:center}.thanks .sub{color:var(--ink-muted)}.names{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}.names span{direction:ltr;padding:10px 22px;border-radius:99px;border:1px solid color-mix(in srgb,var(--ink-fg) 25%,transparent);font-weight:600;font-size:1.1rem}.hindi{margin:44px auto 0;font-size:clamp(1.25rem,2.8vw,1.7rem);font-weight:700;max-width:30ch;text-wrap:balance}.hindi small{display:block;font-size:.95rem;font-weight:400;color:var(--ink-muted);margin-top:8px}
-</style>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GGS</title>
+<meta property="og:title" content="GGS · شكل جديد. نفس الشباب.">
+<meta property="og:description" content="كل تحديثات سيرفر GGS في مكان واحد.">
 <link rel="icon" href="logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap">
+<style>
+:root{--bg:#000;--fg:#f5f5f7;--mut:#86868b;--card:#141416;--line:#2a2a2e;--blue:#2997ff;--f:-apple-system,BlinkMacSystemFont,"SF Pro Display","IBM Plex Sans Arabic",system-ui,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f);-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit}
+.in{max-width:1040px;margin:0 auto;padding-inline:max(22px,env(safe-area-inset-left,0px))}
+nav{position:fixed;inset:0 0 auto;z-index:50;height:48px;display:flex;align-items:center;justify-content:space-between;padding-inline:max(22px,env(safe-area-inset-left,0px));background:rgba(0,0,0,.6);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(255,255,255,.08);font-size:.8rem;color:var(--mut)}
+nav b{color:var(--fg);letter-spacing:.04em}
+nav a{background:var(--fg);color:#000;text-decoration:none;padding:5px 14px;border-radius:99px;font-weight:600}
+.pin{position:relative}.stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:grid;place-items:center}
+#hero{height:300vh}
+#logo{width:min(46vw,300px);border-radius:22%;will-change:transform,opacity;box-shadow:0 30px 120px rgba(255,255,255,.08)}
+#hcap{position:absolute;bottom:9vh;font-size:.95rem;color:var(--mut);letter-spacing:.03em}
+#htxt{position:absolute;text-align:center;opacity:0;will-change:transform,opacity;padding-inline:22px}
+#htxt h1{font-size:clamp(3rem,10vw,7.5rem);line-height:1.02;margin:0;font-weight:700;letter-spacing:-.02em}
+#htxt p{font-size:clamp(1.1rem,2.4vw,1.6rem);color:var(--mut);margin:18px 0 0}
+#words{height:220vh}
+#words .stick p{max-width:22ch;font-size:clamp(2rem,5.4vw,4rem);font-weight:700;line-height:1.25;margin:0;padding-inline:22px;text-align:center}
+#words span{opacity:.15;transition:opacity .2s}
+section.blk{padding-block:120px}
+.eye{color:var(--mut);font-weight:600;font-size:1.1rem;text-align:center;margin:0 0 8px}
+h2{font-size:clamp(2.4rem,6.5vw,4.8rem);line-height:1.05;margin:0 0 56px;text-align:center;font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+[data-z]{will-change:transform,opacity}
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.c{background:var(--card);border-radius:28px;padding:34px 30px;min-width:0;border:1px solid rgba(255,255,255,.04)}
+.c.w3{grid-column:span 3}.c.w2{grid-column:span 2}
+.c .k{font-size:.8rem;color:var(--mut);font-weight:600}
+.c h3{font-size:1.6rem;margin:8px 0 8px;line-height:1.2}
+.c p{margin:0;color:var(--mut)}
+.c b{color:var(--fg)}
+.c.big{grid-column:span 6;text-align:center;padding:60px 30px;background:radial-gradient(120% 140% at 50% 0%,#1d1d22,#0b0b0d)}
+.c.big h3{font-size:clamp(2rem,5vw,3.4rem)}
+@media(max-width:760px){.c.w3,.c.w2{grid-column:span 6}}
+.games{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media(max-width:700px){.games{grid-template-columns:1fr}}
+.g{border-radius:28px;padding:40px 30px;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;min-width:0}
+.g .e{position:absolute;top:28px;inset-inline-start:30px;font-size:3rem}
+.g b{font-size:2rem;line-height:1.1}.g small{opacity:.8;margin-top:6px;font-size:1rem;direction:ltr;unicode-bidi:isolate;text-align:right}
+.g.v{background:linear-gradient(160deg,#ff5f6d,#a3102a)}.g.cd{background:linear-gradient(160deg,#5aa866,#1f4f29)}.g.o{background:linear-gradient(160deg,#7b86ff,#2c36b8)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px;text-align:center;color:var(--mut)}
+.steps i{display:block;font-style:normal;font-size:2.6rem;color:var(--fg);font-weight:700}
+@media(max-width:700px){.steps{grid-template-columns:1fr}}
+.pod{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:end;direction:ltr}
+.pod .p{direction:rtl;background:var(--card);border-radius:28px;padding:34px 24px;text-align:center;min-width:0}
+.pod .p.one{padding-block:58px;background:linear-gradient(180deg,#232327,#121214)}
+@media(max-width:700px){.pod{grid-template-columns:1fr;direction:rtl}.pod .p.one{order:-1}}
+.p .m{font-size:2.6rem}.p .u{font-size:1.5rem;font-weight:700;direction:ltr;margin-top:6px}
+.p .n{font-size:clamp(3rem,7vw,4.6rem);font-weight:700;line-height:1;margin-top:14px;font-variant-numeric:tabular-nums}
+.p .l{color:var(--mut);font-size:.85rem}.p .j{margin-top:14px;text-wrap:balance}
+.list{margin-top:20px;background:var(--card);border-radius:28px;padding:8px 30px}
+.r{display:grid;grid-template-columns:2em minmax(0,8em) minmax(0,1fr) auto;gap:18px;align-items:center;padding:18px 0;border-top:1px solid var(--line)}
+.r:first-child{border-top:0}.r .k{color:var(--mut);font-weight:700}.r .u{font-weight:600;direction:ltr;text-align:right}.r .j{color:var(--mut)}.r .c2{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:640px){.r{grid-template-columns:2em minmax(0,1fr) auto}.r .j{grid-column:2/-1}}
+.src{text-align:center;color:var(--mut);font-size:.8rem;margin-top:16px}
+.names{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.names span{direction:ltr;padding:14px 26px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:1.2rem}
+.hindi{margin:80px auto 0;text-align:center;font-size:clamp(1.7rem,4.4vw,3rem);font-weight:700;max-width:20ch;line-height:1.25;text-wrap:balance}
+.hindi small{display:block;font-size:1rem;color:var(--mut);font-weight:400;margin-top:12px}
+.hindi.wait{opacity:0}.hindi.show{animation:pop .8s cubic-bezier(.2,1.5,.3,1) both,shake .5s .1s both}
+@keyframes pop{0%{opacity:0;transform:scale(1.7)}60%{opacity:1}100%{opacity:1;transform:none}}
+@keyframes shake{0%,100%{translate:0}20%{translate:-8px 0}40%{translate:6px 0}60%{translate:-4px 0}80%{translate:2px 0}}
+#fb{position:fixed;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:99;display:grid;place-items:center}
+#fb span{font:800 clamp(1.4rem,4vw,2.6rem)/1 system-ui,sans-serif;color:#000;letter-spacing:.1em;opacity:0}
+#fb.go{animation:fb 2.8s ease-out forwards}#fb.go span{animation:fbt 2.8s ease-out forwards}
+@keyframes fb{0%{opacity:0}3%,45%{opacity:1}100%{opacity:0}}
+@keyframes fbt{0%,8%{opacity:0;transform:scale(1.4)}14%,40%{opacity:.85;transform:none}55%,100%{opacity:0}}
+body.dazed main{animation:daze 2.8s ease-out}@keyframes daze{0%,40%{filter:blur(14px) brightness(1.8)}100%{filter:none}}
+#join{height:200vh}
+#join .stick{text-align:center}
+#bigt{position:absolute;font-size:38vw;font-weight:800;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.12);direction:ltr;will-change:transform;white-space:nowrap}
+#jc{position:relative;padding-inline:22px}
+#jc img{width:96px;border-radius:22px}
+#jc h2{margin:22px 0 14px}
+#jc p{color:var(--mut);font-size:1.2rem;margin:0 0 34px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:#5865f2;color:#fff;text-decoration:none;font-weight:700;font-size:1.25rem;padding:18px 38px;border-radius:99px;box-shadow:0 18px 60px rgba(88,101,242,.45);transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:scale(1.05);box-shadow:0 24px 80px rgba(88,101,242,.6)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.link{display:block;margin-top:18px;color:var(--mut);direction:ltr;font-size:.95rem;text-decoration:none}
+footer{border-top:1px solid var(--line);padding-block:26px 40px;color:var(--mut);font-size:.8rem}
+footer .in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(prefers-reduced-motion:reduce){#hero,#words,#join{height:auto}.stick{position:relative;height:auto;padding-block:120px}#htxt{position:relative;opacity:1}#logo{display:none}#hcap{display:none}#words span{opacity:1}}
+</style>
 </head>
 <body>
-<nav><div class="in"><b>GGS</b><span>تحديث 16 أكتوبر 2026</span></div></nav>
-<section class="hero"><div class="in">
-<img src="logo.png" alt="شعار GGS">
-<p class="eyebrow">سيرفر GGS</p>
-<h1>شكل جديد.<br>نفس الشباب.</h1>
-<p class="lede">رتبنا السيرفر من أوله لآخره عشان تلقى كل شي أسرع، وتلقى ربعك في لعبتك.</p>
-<div class="cta"><a href="#roles">اختار رتبة لعبتك</a><a href="#top">شوف مين ما عنده حياة</a><a href="#map">شوف شكل السيرفر</a></div>
-</div></section>
-<section class="band"><div class="in">
-<h2>وش الجديد.</h2>
-<p class="sub">كل التغييرات اللي صارت اليوم، في مكان واحد.</p>
+<nav><b>GGS</b><a href="https://discord.gg/5dsGHgk5x" target="_blank" rel="noopener">ادخل السيرفر</a></nav>
+<main>
+<div class="pin" id="hero"><div class="stick">
+<img id="logo" src="logo.png" alt="شعار GGS">
+<div id="htxt"><h1>شكل جديد.<br>نفس الشباب.</h1><p>تحديث سيرفر GGS · أكتوبر 2026</p></div>
+<div id="hcap">مرّر لتحت ↓</div>
+</div></div>
+<div class="pin" id="words"><div class="stick"><p>رتبنا السيرفر من أوله لآخره عشان تلقى كل شي أسرع، وتلقى ربعك في لعبتك.</p></div></div>
+<section class="blk"><div class="in">
+<p class="eye">وش الجديد</p>
+<h2 data-z>كل شي في مكانه.</h2>
 <div class="bento">
-<div class="t w3"><span class="k">الهوية</span><h3>شعار جديد للسيرفر</h3><p>GGS بالأبيض والأسود، وفي داخل الحروف رسمات ترمز لألعابنا.</p></div>
-<div class="t w3"><span class="k">الترتيب</span><h3>كاتيقوري Info صار أول شي</h3><p>الترحيب والقوانين والإعلانات والرتب والأذكار، كلها فوق.</p></div>
-<div class="t w2"><span class="k">جديد</span><h3>روم الإعلانات</h3><p><span class="chan">〈announcements-📢〉</span> للأخبار بس، عشان ما يضيع شي.</p></div>
-<div class="t w2"><span class="k">جديد</span><h3>روم الرتب</h3><p><span class="chan">〈roles-🎭〉</span> تاخذ فيه رتبة لعبتك بضغطة.</p></div>
-<div class="t w2"><span class="k">تعديل</span><h3>ترحيب جديد</h3><p>كل عضو يدخل يجيه كرت باسمه ورقمه في <span class="chan">〈welcome-🤗〉</span>.</p></div>
-<div class="t w3"><span class="k">الصوت</span><h3>أسماء أوضح للرومات</h3><p>صارت <span class="chan">〈Voice 1-🎧〉</span> و <span class="chan">〈Voice 2-🎧〉</span> بدل الاسمين المكررين.</p></div>
-<div class="t w3"><span class="k">الحماية</span><h3>سجل يحفظ الجو</h3><p>رومات الإدارة نزلت تحت، وصار فيه سجل يتابع اللي يصير في السيرفر.</p></div>
+<div class="c big" data-z><span class="k">الهوية</span><h3>شعار جديد. أبيض وأسود.</h3><p>وفي داخل الحروف رسمات ترمز لألعابنا.</p></div>
+<div class="c w3" data-z><span class="k">الترتيب</span><h3>Info صار فوق</h3><p>الترحيب والقوانين والإعلانات والرتب والأذكار، كلها أول شي.</p></div>
+<div class="c w3" data-z><span class="k">جديد</span><h3>روم الإعلانات</h3><p><b>〈announcements-📢〉</b> للأخبار بس، عشان ما يضيع شي.</p></div>
+<div class="c w2" data-z><span class="k">جديد</span><h3>روم الرتب</h3><p><b>〈roles-🎭〉</b> رتبة لعبتك بضغطة.</p></div>
+<div class="c w2" data-z><span class="k">تعديل</span><h3>ترحيب جديد</h3><p>كرت باسمك ورقمك في <b>〈welcome-🤗〉</b>.</p></div>
+<div class="c w2" data-z><span class="k">الحماية</span><h3>سجل يحفظ الجو</h3><p>كل شي يصير في السيرفر ينحفظ للإدارة.</p></div>
 </div>
 </div></section>
-<section class="dark" id="roles"><div class="in">
-<h2>لعبتك. رتبتك.</h2>
-<p class="sub">اختار لعبتك من روم الرتب، والشباب يقدرون ينادونك بمنشن وحدة.</p>
+<section class="blk" id="roles"><div class="in">
+<p class="eye">رتب الألعاب</p>
+<h2 data-z>لعبتك. رتبتك.</h2>
 <div class="games">
-<div class="g v"><div class="e">🔫</div><b>Valorant</b><span>@Valorant</span></div>
-<div class="g c"><div class="e">🪖</div><b>Call of Duty</b><span>@Call of Duty</span></div>
-<div class="g o"><div class="e">🛡️</div><b>Overwatch</b><span>@Overwatch</span></div>
+<div class="g v" data-z><span class="e">🔫</span><b>Valorant</b><small>@Valorant</small></div>
+<div class="g cd" data-z><span class="e">🪖</span><b>Call of Duty</b><small>@Call of Duty</small></div>
+<div class="g o" data-z><span class="e">🛡️</span><b>Overwatch</b><small>@Overwatch</small></div>
 </div>
-<div class="how">
-<div><div class="n">١</div><p>افتح روم 〈roles-🎭〉</p></div>
-<div><div class="n">٢</div><p>اضغط زر لعبتك وتاخذ الرتبة</p></div>
-<div><div class="n">٣</div><p>اضغطه مرة ثانية إذا تبي تشيلها</p></div>
-</div>
+<div class="steps"><div data-z><i>١</i>افتح روم 〈roles-🎭〉</div><div data-z><i>٢</i>اضغط زر لعبتك</div><div data-z><i>٣</i>اضغطه مرة ثانية وتنشال</div></div>
 </div></section>
-<section id="top"><div class="in" style="padding-block:88px">
-<h2>ما عندهم حياة.</h2>
-<p class="sub">أكثر الشباب كلام في السيرفر. نحبكم، بس اطلعوا شوي 🌞</p>
-<div class="lb-pod">
-<div class="p second"><div class="medal">🥈</div><div class="u">nokorie</div><span class="lvl">Level 15</span><div class="num">638</div><div class="lbl">رسالة</div><div class="joke">ناقصه 22 رسالة ويطيّح صاحب السيرفر. الحرب الباردة بدأت 🔥</div></div>
-<div class="p first"><div class="medal">🥇</div><div class="u">v7h4</div><span class="lvl">Level 15</span><div class="num">660</div><div class="lbl">رسالة</div><div class="joke">صاحب السيرفر وأول واحد فيه. يعني يسولف مع نفسه أغلب الوقت 😂</div></div>
-<div class="p third"><div class="medal">🥉</div><div class="u">s3dx</div><span class="lvl">Level 13</span><div class="num">487</div><div class="lbl">رسالة</div><div class="joke">أول واحد ضغط زر الرتب. ما ينتظر شي يصير، هو اللي يصير 🏃</div></div>
+<section class="blk" id="top"><div class="in">
+<p class="eye">أكثر الشباب كلام</p>
+<h2 data-z>ما عندهم حياة.</h2>
+<div class="pod">
+<div class="p" data-z><div class="m">🥈</div><div class="u">nokorie</div><div class="n" data-c="638">638</div><div class="l">رسالة · Level 15</div><div class="j">ناقصه 22 رسالة ويطيّح صاحب السيرفر. الحرب الباردة بدأت 🔥</div></div>
+<div class="p one" data-z><div class="m">🥇</div><div class="u">v7h4</div><div class="n" data-c="660">660</div><div class="l">رسالة · Level 15</div><div class="j">صاحب السيرفر وأول واحد فيه. يعني يسولف مع نفسه أغلب الوقت 😂</div></div>
+<div class="p" data-z><div class="m">🥉</div><div class="u">s3dx</div><div class="n" data-c="487">487</div><div class="l">رسالة · Level 13</div><div class="j">أول واحد ضغط زر الرتب. ما ينتظر شي يصير، هو اللي يصير 🏃</div></div>
 </div>
-<div class="lb-list">
-<div class="r"><span class="rk">4</span><span class="nm">the9lord</span><span class="jk">ملك الفوروورد. يرسل كليبات أكثر ما يلعب 📹</span><span class="ct">376 <small>رسالة</small></span></div>
-<div class="r"><span class="rk">5</span><span class="nm">icrazyix</span><span class="jk">اسمه فيه crazy، والمستوى 11 يأكد الكلام</span><span class="ct">305 <small>رسالة</small></span></div>
-<div class="r"><span class="rk">6</span><span class="nm">soazizx</span><span class="jk">يطلع ويختفي مثل الواي فاي في الطيارة ✈️</span><span class="ct">207 <small>رسالة</small></span></div>
-<div class="r"><span class="rk">7</span><span class="nm">jic_bb</span><span class="jk">يقرأ كل شي ويرد مرة بالأسبوع. بس لما يرد يقفلها</span><span class="ct">162 <small>رسالة</small></span></div>
-<div class="r"><span class="rk">8</span><span class="nm">sr0.oi</span><span class="jk">الحساب الأصلي…</span><span class="ct">131 <small>رسالة</small></span></div>
-<div class="r"><span class="rk">9</span><span class="nm">sr0.oiii</span><span class="jk">…والحساب الثالث. واضح إن حساب واحد ما كفّاه 😂</span><span class="ct">108 <small>رسالة</small></span></div>
-<div class="r"><span class="rk">10</span><span class="nm">0bfss</span><span class="jk">دخل التوب 10 بالدفّ، بس دخل 👏</span><span class="ct">67 <small>رسالة</small></span></div>
+<div class="list" data-z>
+<div class="r"><span class="k">4</span><span class="u">the9lord</span><span class="j">ملك الفوروورد. يرسل كليبات أكثر ما يلعب 📹</span><span class="c2">376</span></div>
+<div class="r"><span class="k">5</span><span class="u">icrazyix</span><span class="j">اسمه فيه crazy، والمستوى 11 يأكد الكلام</span><span class="c2">305</span></div>
+<div class="r"><span class="k">6</span><span class="u">soazizx</span><span class="j">يطلع ويختفي مثل الواي فاي في الطيارة ✈️</span><span class="c2">207</span></div>
+<div class="r"><span class="k">7</span><span class="u">jic_bb</span><span class="j">يقرأ كل شي ويرد مرة بالأسبوع، بس لما يرد يقفلها</span><span class="c2">162</span></div>
+<div class="r"><span class="k">8</span><span class="u">sr0.oi</span><span class="j">الحساب الأصلي…</span><span class="c2">131</span></div>
+<div class="r"><span class="k">9</span><span class="u">sr0.oiii</span><span class="j">…والحساب الثالث. حساب واحد ما كفّاه 😂</span><span class="c2">108</span></div>
+<div class="r"><span class="k">10</span><span class="u">0bfss</span><span class="j">دخل التوب 10 بالدفّ، بس دخل 👏</span><span class="c2">67</span></div>
 </div>
-<p class="src">الأرقام من لوحة MEE6 للسيرفر · 16 أكتوبر 2026</p>
+<p class="src">عدد الرسائل من لوحة MEE6 للسيرفر · 16 أكتوبر 2026</p>
 </div></section>
-<section class="thanks"><div class="in">
-<h2>شكراً لوجودكم يا حلوين 🤍</h2>
-<p class="sub">أكثر 5 منوّرين السيرفر</p>
-<div class="names"><span>v7h4</span><span>nokorie</span><span>s3dx</span><span>the9lord</span><span>icrazyix</span></div>
-<p class="hindi">ولا تنسون… هندي مازال ينتظرنا نكمل الباك رومز مسكين العبوها معاه 🚪💡<small>لا تخلونه ينتظر أكثر من كذا</small></p>
+<section class="blk"><div class="in">
+<p class="eye">أكثر 5 منوّرين السيرفر</p>
+<h2 data-z>شكراً لوجودكم يا حلوين 🤍</h2>
+<div class="names" data-z><span>v7h4</span><span>nokorie</span><span>s3dx</span><span>the9lord</span><span>icrazyix</span></div>
+<p class="hindi">ولا تنسون… هندي مازال ينتظرنا نكمل الباك رومز 🚪💡<small>لا تخلونه ينتظر أكثر من كذا</small></p>
 </div></section>
-><section class="band" id="map"><div class="in">
-<h2>السيرفر الحين.</h2>
-<p class="sub">الترتيب الجديد للرومات من فوق لتحت.</p>
-<div class="map">
-<div class="cat"><h4>〈Info-📌〉</h4>
-<div class="row"><i>#</i><span>〈welcome-🤗〉</span></div>
-<div class="row"><i>#</i><span>rules</span></div>
-<div class="row"><i>#</i><span>〈announcements-📢〉</span><em>جديد</em></div>
-<div class="row"><i>#</i><span>〈roles-🎭〉</span><em>جديد</em></div>
-<div class="row"><i>#</i><span>〈أذكار-الصباح-المساء〉</span></div>
-</div>
-<div class="cat"><h4>〈Public chat-💬〉</h4>
-<div class="row"><i>#</i><span>〈chat-💬〉</span></div>
-<div class="row"><i>#</i><span>〈bots-🤖〉</span></div>
-<div class="row"><i>#</i><span>〈clips-📹〉</span></div>
-<h4 style="margin-top:18px">〈Public Voice-🎧〉</h4>
-<div class="row"><i>🔊</i><span>〈Voice 1-🎧〉</span><em>تعديل</em></div>
-<div class="row"><i>🔊</i><span>〈Voice 2-🎧〉</span><em>تعديل</em></div>
-</div>
-<div class="cat"><h4>〈Private-💎VIP〉</h4>
-<div class="row"><i>#</i><span>〈💬-سواليف〉</span></div>
-<div class="row"><i>🔊</i><span>سيرفر الي فوق</span></div>
-<div class="row"><i>🔊</i><span>سيرفر الي تحت</span></div>
-<h4 style="margin-top:18px">〈AFK-💤〉 · LOG</h4>
-<div class="row"><i>🔊</i><span>〈AFK〉</span></div>
-<div class="row"><i>#</i><span>رومات الإدارة</span></div>
-</div>
-</div>
-</div></section>
+<div class="pin" id="join"><div class="stick">
+<div id="bigt">GGS</div>
+<div id="jc"><img src="logo.png" alt=""><h2>تعال العب معنا.</h2><p>السيرفر مفتوح، والشباب ينتظرونك.</p>
+<a class="btn" href="https://discord.gg/5dsGHgk5x" target="_blank" rel="noopener">ادخل سيرفر GGS ←</a>
+<a class="link" href="https://discord.gg/5dsGHgk5x" target="_blank" rel="noopener">discord.gg/5dsGHgk5x</a></div>
+</div></div>
+</main>
 <footer><div class="in"><span>GGS · 2026</span><span>عندك اقتراح؟ اكتبه في 〈chat-💬〉</span></div></footer>
+<div id="fb" aria-hidden="true"><span>FLASHBANG OUT!</span></div>
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var w=document.querySelector('#words p');w.innerHTML=w.textContent.split(' ').map(function(x){return '<span>'+x+'</span> '}).join('');
+var ws=[].slice.call(w.children),zs=[].slice.call(document.querySelectorAll('[data-z]'));
+var hero=document.getElementById('hero'),logo=document.getElementById('logo'),ht=document.getElementById('htxt'),cap=document.getElementById('hcap'),wd=document.getElementById('words'),jn=document.getElementById('join'),bt=document.getElementById('bigt'),jc=document.getElementById('jc');
+function prog(el){var r=el.getBoundingClientRect(),h=r.height-innerHeight;return Math.min(1,Math.max(0,-r.top/(h||1)))}
+function ease(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
+function frame(){
+if(!rm){
+var p=prog(hero),a=ease(Math.min(1,p/.6));
+logo.style.transform='scale('+(1+a*14)+')';logo.style.opacity=1-Math.min(1,p/.45);
+cap.style.opacity=1-Math.min(1,p*6);
+var b=Math.min(1,Math.max(0,(p-.35)/.4));ht.style.opacity=b;ht.style.transform='scale('+(.75+.25*ease(b))+')';
+var q=prog(wd);ws.forEach(function(s,i){s.style.opacity=q*ws.length*1.15>i?1:.15});
+var j=prog(jn);bt.style.transform='scale('+(.6+j*1.4)+')';bt.style.opacity=1-j*.5;jc.style.transform='scale('+(.85+.15*ease(Math.min(1,j*2.5)))+')';
+var vh=innerHeight;zs.forEach(function(el){var r=el.getBoundingClientRect(),c=(r.top+r.height/2)/vh,v=Math.min(1,Math.max(0,(1.15-c)/.45));el.style.transform='scale('+(.86+.14*ease(v))+')';el.style.opacity=.25+.75*v});
+}
+requestAnimationFrame(frame)}
+frame();
+var cs=[].slice.call(document.querySelectorAll('[data-c]'));
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting||rm)return;io.unobserve(e.target);var el=e.target,t=+el.dataset.c,s=performance.now();(function st(n){var k=Math.min(1,(n-s)/1400);el.textContent=Math.round(t*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(st)})(s)})},{threshold:.6});cs.forEach(function(c){io.observe(c)});
+var h=document.querySelector('.hindi');h.classList.add('wait');
+var io2=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;io2.disconnect();if(rm){h.classList.remove('wait');return}document.getElementById('fb').classList.add('go');document.body.classList.add('dazed');setTimeout(function(){h.classList.remove('wait');h.classList.add('show')},1400);setTimeout(function(){document.body.classList.remove('dazed')},2900)},{threshold:.9});io2.observe(h);
+}
+})();
+</script>
 </body>
 </html>
